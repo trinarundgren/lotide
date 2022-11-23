@@ -1,33 +1,17 @@
+// ASSERT EQUAL
+const assertEqual = require('./assertEqual').default;
 
-/*
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`🌻🌻🌻 Assertion Passed : ${actual} === ${expected}`);
-  } else {
-    console.log(`☔☔☔ Assertion Failed : ${actual} !== ${expected}`);
-  }
-}; */
-
-/*
+// TAIL FUNCTION
 const tail = function(array) {
-  let newArray = [];
-  for (let i = 1; i < array.length; i++) {
-    newArray[i - 1] = array[i];
+  let tail;
+  if (array.length > 1) {
+    tail = array.slice(1);
+  } else if (array.length === 0) {
+    tail = [];
+  } else if (array.length === 1) {
+    tail = array;
   }
-  return newArray;
-};
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words);
-assertEqual(words.length, 3);
-*/
-
-// const assertEqual = require('./assertEqual');
-const tail = function(array) {
-  let tailArray = [];
-  for (let i = 1; i < array.length; i ++) {
-    tailArray.push(array[i]);
-  }
-  return tailArray;
+  return tail;
 };
 
 
