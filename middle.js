@@ -1,4 +1,11 @@
-const middle = function(arr) {
+// EQUAL ARRAYS...
+const eqArrays = require('./eqArrays');
+
+// ASSERT ARRAYS EQUAL...
+const assertArraysEqual = require('./assertArraysEqual');
+
+// MIDDLE FUNCTION
+const middle = function (arr) {
   const tooShortForMiddle = arr.length <= 2;
   const evenArray = arr.length % 2 === 0;
   if (tooShortForMiddle) {
