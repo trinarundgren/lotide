@@ -1,4 +1,4 @@
-const assertEqual = function(actual, expected) {
+const assertArraysEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`🌻🌻🌻Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -39,7 +39,7 @@ const letterPositions = function(sentence) {
       
     } return results;
   };
-console.log(letterPositions('I am Web Developer'))
+console.log(letterPositions('My name is Trina Rundgren'))
 
-assertArraysEqual(letterPositions("hello").e, [1]);
+assertArraysEqual(letterPositions("Hello").e, [1]);
 module.exports = letterPositions;
