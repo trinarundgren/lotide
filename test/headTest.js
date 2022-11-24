@@ -16,12 +16,5 @@ describe('head()', () => {
     assert.strictEqual(head([5, 6, 7]), 5);
   });
 
-  it('should return "Hello" for ["Hello", "Lighthouse", "Labs"]', () => {
-    assert.strictEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-  });
-
-  it('should return "Trina" for ["Trina", "Rundgren"]', () => {
-    assert.strictEqual(head(['Trina', 'Trina']), 'Rundgren');
-  });
 
 });
